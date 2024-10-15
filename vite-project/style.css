@@ -163,3 +163,29 @@ main {
     font-weight: 100;
   }
 }
+
+#one-house {
+  margin: 3rem;
+  img {
+    border-radius: 2rem;
+    object-fit:contain;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.two-grid {
+  margin: -1rem 3rem 0 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+
+  p {
+    text-align: left;
+  }
+
+  p:nth-child(1) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
