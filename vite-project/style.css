@@ -1,6 +1,11 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body {
+  overflow-x: hidden;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -55,6 +60,10 @@
   color: red;
 }
 
+.fadeout-header {
+  transition: opacity 0.6s;
+}
+
 header {
   height: 100vh;
   overflow: hidden;
@@ -71,7 +80,6 @@ header {
 #main-header {
   justify-content: space-between;
   padding: 2rem;
-  outline: 1px solid red;
 }
 
 #waitlist-button {
@@ -115,7 +123,7 @@ header {
 }
 
 main {
-  width: 3rem;
-  height: 3rem;
   outline: 1px solid red;
+  height: 3rem;
+  width: 100%;
 }
