@@ -83,6 +83,8 @@ header {
 }
 
 #main-header {
+  position: fixed;
+  width: 100vw;
   justify-content: space-between;
   padding: 2rem;
 }
