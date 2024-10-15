@@ -55,7 +55,12 @@
   color: red;
 }
 
-header, #right-header, #language-select {
+header {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#main-header, #right-header, #language-select {
   display: flex;
 }
 
@@ -63,9 +68,10 @@ header, #right-header, #language-select {
   align-items: center;
 }
 
-header {
+#main-header {
   justify-content: space-between;
   padding: 2rem;
+  outline: 1px solid red;
 }
 
 #waitlist-button {
@@ -98,7 +104,6 @@ header {
 #background {
   width: 100vw;
   height: 100vh;
-  outline: 1px solid red;
   position: absolute;
   z-index: -1;
 
@@ -107,4 +112,10 @@ header {
     height: 100%;
     object-fit: cover;
   }
+}
+
+main {
+  width: 3rem;
+  height: 3rem;
+  outline: 1px solid red;
 }
