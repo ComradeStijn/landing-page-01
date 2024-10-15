@@ -175,7 +175,7 @@ main {
 }
 
 .two-grid {
-  margin: -1rem 3rem 0 3rem;
+  margin: -1rem 3rem 5rem 3rem;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
