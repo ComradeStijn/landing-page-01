@@ -50,3 +50,61 @@
   #root, #__next {
     isolation: isolate;
   }
+
+.color-red {
+  color: red;
+}
+
+header, #right-header, #language-select {
+  display: flex;
+}
+
+#right-header {
+  align-items: center;
+}
+
+header {
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+#waitlist-button {
+  background-color: white;
+  border: none;
+  margin-right: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s, outline 0.2s;
+}
+
+#waitlist-button:hover {
+  color: white;
+  background-color: black;
+  outline: 5px solid black;
+}
+
+.language-underline {
+  color: white;
+  margin: 0 0.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.language-underline:hover {
+  text-decoration: underline;
+}
+
+#background {
+  width: 100vw;
+  height: 100vh;
+  outline: 1px solid red;
+  position: absolute;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
