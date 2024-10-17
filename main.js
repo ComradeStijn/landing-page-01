@@ -18,3 +18,7 @@ window.addEventListener('scroll', () => {
     
     fadeOutElement.style.opacity = 1 - Math.min(2 * scrollY / windowHeight , 1);
 })
+
+const baba = 3
+
+console.log(baba)
